@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const { Product, Order } = require('./models');
-const stripe = require('stripe')('sk_test_51PV7ifDvizZnc7i4orVIVuTvc3T8kwaMfjcwzP7X9KmZOiwzaopsNyot2aJilHugK7DwmZ6VJ1tGYAQ3oEMb7JwR00QZhip6qV');
+const stripe = require('stripe')('secret-key');
 const app = express();
 app.use(bodyParser.json());
 app.use(cors());
